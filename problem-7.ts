@@ -12,6 +12,6 @@ class Car {
     }
 }
 
-const myCar = new Car("Toyota", "Corolla", 2008);
+const myCar = new Car("Toyota", "Corolla", 2014);
 const carAge = myCar.getCarAge(); 
 // console.log(carAge);

@@ -15,6 +15,6 @@
     return count;
 }
 
-const result = countWordOccurrences("hello  world! Hello rehad. hello saiful", "hello");
+const result = countWordOccurrences("hello  world! Hello rehad. hello saiful", "Hello");
 // console.log(result); 
 }

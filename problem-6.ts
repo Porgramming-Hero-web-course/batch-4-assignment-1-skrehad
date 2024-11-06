@@ -2,6 +2,7 @@
 
 interface Profile {
     name: string;
+    roll:number;
     age: number;
     email: string;
 }
@@ -12,11 +13,12 @@ function updateProfile(profile: Profile, updates: Partial<Profile>): Profile {
 
 const userProfile: Profile = {
     name: "Rehad",
+    roll:2,
     age: 22,
     email: "rehadhasan664@gmail.com"
 };
 
-const updatedProfile = updateProfile(userProfile, { name: 'Saiful Islam Rehad' });
+const updatedProfile = updateProfile(userProfile, { name: 'Saiful Islam Rehad',roll:1 });
 
-// console.log(updatedProfile);
+console.log(updatedProfile);
 
