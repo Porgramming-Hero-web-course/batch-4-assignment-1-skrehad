@@ -11,7 +11,5 @@ function removeDuplicates(array:number[]):number[] {
       
       return uniqueNumbers;
     }
-    
-
     const result = removeDuplicates([1, 2, 2, 3, 4, 4, 5,3,5,6]);
-    console.log(result); 
+    // console.log(result); 
