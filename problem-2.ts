@@ -1,11 +1,17 @@
-{// Write a TypeScript function sumArray that takes an array of numbers and returns the sum of all elements in the array.
-function sumArray(numbers: number[]): number {
-    let sum:number = 0;
-    for (let number of numbers) {
-      sum =sum+ number;
+// Create a TypeScript function removeDuplicates that accepts an array of numbers and returns a new array with duplicates removed. Preserve the original order of elements.
+
+function removeDuplicates(array:number[]):number[] {
+    const uniqueNumbers:number[]=[]
+
+    for (const number of array) {
+        if (!uniqueNumbers.includes(number)) {
+          uniqueNumbers.push(number);
+        }
+      }
+      
+      return uniqueNumbers;
     }
-    return sum;
-  }
-const result = sumArray([20,25,25,30,45,55]);
-console.log(result); 
-}
+    
+
+    const result = removeDuplicates([1, 2, 2, 3, 4, 4, 5,3,5,6]);
+    console.log(result); 
